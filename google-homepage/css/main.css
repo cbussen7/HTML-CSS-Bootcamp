@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Product Sans', sans-serif;
+  height: 100vh;
+}
+
+body a {
+  color: black;
+  font-size: 0.90em;
+  opacity: 0.7;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  margin: 20px 20px;
+  justify-content: space-between;
+}
+
+header a {
+  padding: 10px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+header a.sign-in-btn {
+  color: #fff;
+  background-color: #4285F4;
+  padding: 5px 15px;
+  border-radius: 2px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 200px;
+}
+
+.content-container .title {
+  font-size: 3em;
+  font-weight: 300;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  cursor: default;
+}
+
+.content-container .title h1 .blue {
+  color: #4285F4;
+}
+
+.content-container .title h1 .red {
+  color: red;
+}
+
+.content-container .title h1 .gold {
+  color: gold;
+}
+
+.content-container .title h1 .green {
+  color: green;
+}
+
+.content-container .search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.content-container .search input {
+  width: 39%;
+  padding: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px 20px 20px 20px;
+  outline: none;
+}
+
+.content-container .below-search-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container .below-search-buttons a.button {
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+  margin: 8px;
+  border-radius: 3px;
+}
+
+.content-container .below-search-buttons a.button:hover {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+footer .footer-container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  padding: 18px;
+  right: 0;
+  left: 0;
+  bottom: 100%;
+}
+
+footer .footer-container a {
+  margin: 0 13px;
+  opacity: 0.6;
+}

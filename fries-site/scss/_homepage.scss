@@ -1,0 +1,80 @@
+// Hero section styles
+.hero-section{
+   background: url(../images/backgrounds/fries-hero-bg.jpg) no-repeat center center/cover;
+   padding: 100px;
+   height: 300px;
+   // creates parallax effect - image doesn't move down as you scroll
+   background-attachment: fixed;
+
+   .top-heading{
+      background: #11122b;
+      color: #cbcbcb;
+      width: 290px;
+      border-radius: 2px;
+      padding: 10px 15px;
+   }
+
+   .bottom-heading{
+      background: #cea135;
+      color: #11122b;
+      padding: 10px 15px;
+      margin-top: 15px;
+      width: 107px;
+      border-radius: 2px;
+   }
+}
+
+// Features Section styles
+.features-section{
+   height: 400px;
+   background: url(../images/backgrounds/fries-multiply-bg.jpg);
+   background-color: #cea135;
+   border-top: 10px solid #fff;
+   color: #11122b;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Ubuntu Condensed', sans-serif;
+   // can use CSS box-shadow generator too to preview what given properties might do
+   // horizontal length, vertical length, blur radius, spread radius
+   box-shadow: inset 0px -26px 79px -8px rgba(0, 0, 0, 0.58);
+
+   .columns-wrapper{
+      width: 1000px;
+      display: flex;
+      justify-content: space-between;
+
+      .column{
+         padding: 20px;
+         margin: 42px;
+         text-align: center;
+         border-bottom: 5px solid transparent;
+         border-radius: 10px;
+         transition: 1s;
+
+         &:hover{
+            border-bottom: 5px solid #11122b;
+         }
+
+         // DONT FORGET SPACE BEFORE COLON W NTH CHILD!!!
+         & :nth-child(1){
+            font-size: 3em;
+            margin-bottom: 1em;
+         }
+         & :nth-child(2){
+            font-size: 1.5em;
+            font-weight: 900;
+            height: 50px;
+            transition: 1s;
+            margin-bottom: 1em;
+
+            &:hover{
+               letter-spacing: 1px;
+            }
+         }
+         & :nth-child(3){
+            letter-spacing: 2px;
+         }
+      }
+   }
+}

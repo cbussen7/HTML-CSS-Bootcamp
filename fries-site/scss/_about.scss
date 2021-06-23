@@ -1,0 +1,23 @@
+// Page container styles
+.page-container{
+   display: flex;
+   justify-content: center;
+
+   .content-wrapper{
+      width: 1000px;
+
+      #chef{
+         width: 350px;
+         // values go clockwise - top, right, bottom, left
+         margin: 23px 23px 20px 0;
+         // use floats to wrap text around image
+         float: left;
+         border: 2px solid #cea135;
+      }
+
+      p{
+         letter-spacing: 1px;
+         line-height: 1.8;
+      }
+   }
+}

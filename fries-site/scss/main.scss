@@ -1,0 +1,85 @@
+@import 'nav';
+@import 'homepage';
+@import 'footer';
+@import 'about';
+@import 'square-grid';
+@import 'skewed-header';
+@import 'contact';
+@import 'forms';
+@import 'buttons';
+@import 'media-queries';
+
+*{
+   margin: 0;
+   padding: 0;
+   // box-sizing: border-box;
+}
+
+body{
+   font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+   font-family: 'Roboto Slab', sans-serif;
+}
+
+// banner-image style taken from nav and put in main so footer can use it
+.banner-image {
+   display: flex;
+   justify-content: center;
+   img{
+      width: 216px;
+      height: 100%;
+   }
+}
+
+// link-wrapper style taken from nav and put in main so footer can use it
+.link-wrapper{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+   .nav-link{
+      width: 70px;
+      text-align: center;
+   }
+   
+   a{
+      text-decoration: none;
+      color: #cbcbcb;
+      font-family: 'Ubuntu Condensed', sans-serif;
+      transition: 0.7s;
+      
+      &:hover{
+         color: #cea135;
+         letter-spacing: 2px;
+      }
+   }
+}
+
+// Helpers
+.spacer10{
+   height: 10px;
+   width: 100%;
+}
+.spacer60{
+   height: 60px;
+   width: 100%;
+}
+
+.spacer100{
+   height: 100px;
+   width: 100%;
+}
+
+.anchor-link{
+   a{
+      text-decoration: none;
+      color: inherit;
+   }
+
+   &::after{
+      font-family: 'Font Awesome 5 Free';
+      content: " \f0c1";
+   }
+}

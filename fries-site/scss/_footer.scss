@@ -1,0 +1,57 @@
+.footer-wrapper{
+   background-color: #11122b;
+   color: #cbcbcb;
+   font-family: 'Ubuntu Condensed', sans-serif;
+   margin-top: -4px;
+
+   .banner-image{
+      margin-top: 0;
+      // changes image to more gray color - can also change opacity to get same effect
+      filter: brightness(50%);
+   }
+
+   .contact-hours-wrapper{
+      display: flex;
+      width: 250px;
+      margin: auto;
+      margin-bottom: 40px;
+      justify-content: space-between;
+      letter-spacing: 1px;
+
+      & :nth-child(2){
+         color: #cea135;
+      }
+   }
+
+   .link-wrapper{
+      width: 500px;
+      margin: auto;
+      margin-bottom: 50px;
+   }
+
+   .social-media-icons-wrapper{
+      display: flex;
+      width: 250px;
+      justify-content: space-between;
+      margin: auto;
+
+      a{
+         color: inherit;
+         transition: 0.5s;
+
+         &:hover{
+            color: #cea135;
+         }
+      }
+
+      margin-bottom: 20px;
+   }
+
+   p{
+      font-size: 0.75em;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 60px;
+      opacity: 0.6;
+   }
+}

@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+
+.container {
+  width: 50%;
+  height: 35%;
+  margin: auto;
+}
+
+.container .main-content {
+  padding: 20px;
+  background: url(../teslas.jpg) no-repeat center center/cover;
+}
+
+.container .main-content .heading {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.container .main-content .subheading {
+  color: #52bb52;
+}
+
+.container .main-content .alert {
+  margin-top: 180px;
+  margin-bottom: 20px;
+  width: 40%;
+  background: #2e5a9c;
+  padding: 20px 15px;
+  border-radius: 5px;
+}
+
+.container .main-content .alert a {
+  color: #fff;
+  font-size: 1.8em;
+  text-decoration: none;
+}
+
+.container .main-content .alert a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #52bb52;
+  padding: 40px 20px;
+}
+
+footer p {
+  color: #fff;
+  font-weight: 200;
+  font-size: 0.9em;
+}

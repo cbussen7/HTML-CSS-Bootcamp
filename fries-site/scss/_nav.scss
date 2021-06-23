@@ -1,0 +1,116 @@
+// Common nav styles
+.navigation-wrapper{
+   height: 190px;
+   background-color: #11122b;
+   color: #cbcbcb;
+   // Flexbox container
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 60px 100px;
+   
+   // Left column styles
+   .left-column{
+      display: flex;
+      align-items: center;
+      
+      .contact-hours-wrapper{
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-gap: 10px;
+         color: #fff;
+
+         
+         .hours{
+            font-family: 'Ubuntu Condensed', sans-serif;
+            color: #858585;
+            font-size: 0.8em;
+         }
+      }
+   }
+   
+   // Center column styles
+   .center-column{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 42px;
+      width: 500px;
+      // .banner-image {
+      //    display: flex;
+      //    justify-content: center;
+      //    img{
+      //       width: 216px;
+      //       height: 100%;
+      //    }
+      // }
+      
+      // .link-wrapper{
+      //    display: flex;
+      //    justify-content: space-between;
+      //    align-items: center;
+         
+      //    .nav-link{
+      //       width: 70px;
+      //       text-align: center;
+      //    }
+         
+      //    a{
+      //       text-decoration: none;
+      //       color: #fff;
+      //       font-family: 'Ubuntu Condensed', sans-serif;
+      //       transition: 0.5s;
+            
+      //       &:hover{
+      //          color: #cea135;
+      //          letter-spacing: 2px;
+      //       }
+      //    }
+      // }
+   }
+   
+   // Right column styles
+   .right-column{
+      display: flex;
+      align-items: center;
+      .address-wrapper{
+         color: #fff;
+         font-family: 'Ubuntu Condensed', sans-serif;
+         text-align: right;
+
+         a{
+            color: #858585;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: 0.5s;
+
+            &:hover{
+               color: #cea135;
+            }
+         }
+      }
+
+      .contact-icon{
+         font-size: 2em;
+         margin-left: 15px;
+
+         a{
+            color: #cbcbcb;
+            transition: 0.5s;
+
+            &:hover{
+               color: #cea135;
+            }
+         }
+      }
+      
+   }
+
+   .icon{
+      margin-right: 15px;
+   
+      i{
+         font-size: 2em;
+      }
+   }
+   
+}
